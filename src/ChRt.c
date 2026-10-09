@@ -21,7 +21,8 @@ static void delayMS(uint32_t millis) {
 //------------------------------------------------------------------------------
 void errorBlink(int n) {
 	noInterrupts();
-  pinMode(13, OUTPUT);
+  //pinMode(13, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
   for (;;) {
     int i;
     for (i = 0; i < n; i++) {
